@@ -1,8 +1,69 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Register for the Fun Run 2025 below.</p>
+</div>
+
+<div class="container d-flex justify-content-center">
+    <form style="width: 50%;">
+        <div class="mb-3">
+            <label for="givenName" class="form-label">Given Name</label>
+            <input type="text" class="form-control" id="givenName" name="givenName" required>
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Surname</label>
+            <input type="text" class="form-control" id="surname" name="surname" required>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="col">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="col-5">
+                <label for="emailAddress" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-control" id="category" name="category" required>
+                    <option value="">Select</option>
+                    <option value="5K">5K</option>
+                    <option value="10K">10K</option>
+                    <option value="Half Marathon">Half Marathon</option>
+                    <option value="Marathon">Marathon</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="shirtSize" class="form-label">Shirt Size</label>
+                <select class="form-control" id="shirtSize" name="shirtSize" required>
+                    <option value="">Select</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary" style="width: 300px;">Register</button>
+        </div>
+    </form>
 </div>
